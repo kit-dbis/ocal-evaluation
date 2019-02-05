@@ -10,7 +10,7 @@ data_dirs = ["ALOI", "Annthyroid", "Arrhythmia", "Cardiotocography", "Glass",
              "Stamps", "WBC", "WDBC", "WPBC", "Waveform"]
 
 ### learning scenario ###
-initial_pool_strategy = [("Pn", Dict(:n => 25))]
+initial_pool_strategy = [("Pu", Dict())]
 split_strategy = [("Sf", Dict())]
 
 init_strategies = [SimpleCombinedStrategy(RuleOfThumbScott(), BoundedTaxErrorEstimate(0.05, 0.02, 0.98)),
@@ -28,17 +28,13 @@ oracle_param = Dict{Symbol, Any}(
 )
 
 #### query strategies ####
-query_strategies = [Dict(:type => :MinimumMarginPQs, :param => Dict{Symbol, Any}(:p_inlier => 0.05)),
-  Dict(:type => :ExpectedMinimumMarginPQs, :param => Dict{Symbol, Any}()),
-  Dict(:type => :ExpectedMaximumEntropyPQs, :param => Dict{Symbol, Any}()),
-  Dict(:type => :MinimumLossPQs, :param => Dict{Symbol, Any}(:p_inlier => 0.05)),
-  Dict(:type => :RandomPQs, :param => Dict{Symbol, Any}()),
+query_strategies = [Dict(:type => :RandomPQs, :param => Dict{Symbol, Any}()),
   Dict(:type => :RandomOutlierPQs, :param => Dict{Symbol, Any}()),
   Dict(:type => :HighConfidencePQs, :param => Dict{Symbol, Any}()),
   Dict(:type => :DecisionBoundaryPQs, :param => Dict{Symbol, Any}()),
   Dict(:type => :NeighborhoodBasedPQs, :param => Dict{Symbol, Any}()),
   Dict(:type => :BoundaryNeighborCombinationPQs, :param => Dict{Symbol, Any}())]
 
-num_al_iterations = 50
+num_al_iterations = 100
 num_resamples_initial_pool = 5
-exp_name = "evaluation_part1_qs"
+exp_name = "evaluation_part2"

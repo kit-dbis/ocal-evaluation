@@ -1,6 +1,6 @@
 The ocal-evaluation package is licensed under the MIT "Expat" License:
 
-> Copyright (c) 2018: Holger Trittenbach and Adrian Englhardt.
+> Copyright (c) 2018-2019: Holger Trittenbach and Adrian Englhardt.
 >
 >
 > Permission is hereby granted, free of charge, to any person obtaining a copy
