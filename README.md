@@ -3,7 +3,7 @@ _Scripts and notebooks to benchmark one-class active learning strategies._
 
 This repository contains scripts and notebooks to reproduce the experiments and analyses of the paper
 
-> Holger Trittenbach, Adrian Englhardt, Klemens Böhm, "An Overview and a Benchmark of Active Learning for One-Class Classification", DOI: [10.1016/j.eswa.2020.114372](https://doi.org/10.1016/j.eswa.2020.114372), Expert Systems with Applications, 2021.
+> Holger Trittenbach, Adrian Englhardt, Klemens Böhm, "An overview and a benchmark of active learning for outlier detection with one-class classifiers", DOI: [10.1016/j.eswa.2020.114372](https://doi.org/10.1016/j.eswa.2020.114372), Expert Systems with Applications, 2021.
 
 For more information about this research project, see also the [OCAL project](https://www.ipd.kit.edu/ocal/) website.
 
